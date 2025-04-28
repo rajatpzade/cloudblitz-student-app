@@ -6,8 +6,7 @@ WORKDIR /app
 
 # Clone the repository and install necessary dependencies
 RUN apt-get update && \
-    apt-get install -y git maven && \
-    git clone https://github.com/rajatpzade/cloudblitz-student-app.git /app && \
+    apt-get install -y git maven \
     cd /app/backend && \
     mvn clean package
 
