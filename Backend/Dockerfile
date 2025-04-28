@@ -6,8 +6,7 @@ WORKDIR /app
 
 # Clone the repository and install necessary dependencies
 RUN apt-get update && \
-    apt-get install -y  maven \
-    cd /app/backend && \
+    apt-get install -y  maven  && \
     mvn clean package
 
 # Set the environment variables for the database connection
