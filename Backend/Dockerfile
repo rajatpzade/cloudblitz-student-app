@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 # Set the environment variables for the database connection
 ENV DB_URL=jdbc:mariadb://<rds-endpoint>:3306/student_db
-ENV DB_USERNAME=<db-username>
+ENV DB_USERNAME=
 ENV DB_PASSWORD=<db-password>
 
 # Expose port for the backend application
