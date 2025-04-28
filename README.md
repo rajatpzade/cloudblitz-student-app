@@ -18,3 +18,5 @@ Frontend (React)  <--->  Backend (Spring Boot)  <--->  Database (MariaDB RDS)
 
 ---
 
+## Frontend (React)
+
