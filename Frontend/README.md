@@ -65,7 +65,7 @@ sudo apt install apache2 -y
 - Copy the built files to Apache default web directory:
 
 ```bash
-sudo cp -rv build/* /var/www/html/
+sudo cp -rv dist/* /var/www/html/
 ```
 
 - Start Apache2 service:
