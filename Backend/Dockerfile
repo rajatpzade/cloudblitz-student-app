@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Clone the repository and install necessary dependencies
 RUN apt-get update && \
-    apt-get install -y git maven \
+    apt-get install -y  maven \
     cd /app/backend && \
     mvn clean package
 
