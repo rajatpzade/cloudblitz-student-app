@@ -22,3 +22,4 @@ Frontend (React)  <--->  Backend (Spring Boot)  <--->  Database (MariaDB RDS)
 
 ![react Diagram](/img/Screenshot%202025-04-28%20at%2012.34.44 PM.png)
 
+## Backend (Spring Boot)
