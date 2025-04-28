@@ -13,8 +13,8 @@ RUN apt-get update && \
 
 # Set the environment variables for the database connection
 ENV DB_URL=jdbc:mariadb://172.17.0.2:3306/student_db
-ENV DB_USERNAME=linux
-ENV DB_PASSWORD=redhat
+ENV DB_USERNAME=admin
+ENV DB_PASSWORD=adminpassword
 
 # Expose port for the backend application
 EXPOSE 8080
