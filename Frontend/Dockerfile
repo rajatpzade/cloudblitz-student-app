@@ -21,7 +21,7 @@ RUN npm run build
 RUN apt-get update && apt-get install -y apache2
 
 # Step 8: Copy the build files to the Apache default web directory
-RUN cp -rf /app/build/* /var/www/html/
+RUN cp -rf /app/dist/* /var/www/html/
 
 # Step 9: Expose the port Apache will serve on
 EXPOSE 80
