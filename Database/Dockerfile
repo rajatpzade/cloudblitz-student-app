@@ -5,3 +5,6 @@ ENV MYSQL_USER=linux
 ENV MYSQL_PASSWORD=redhat
 
 COPY init.sql /docker-entrypoint-initdb.d/
+
+# Expose MariaDB port
+EXPOSE 3306
