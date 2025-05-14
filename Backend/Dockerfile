@@ -19,3 +19,6 @@ ENV DB_URL=jdbc:mariadb://localhost:3306/student_db \
 
 CMD ["java", "-jar", "app.jar"]
 
+
+
+# after apply 
