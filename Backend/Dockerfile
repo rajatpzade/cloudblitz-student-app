@@ -24,4 +24,4 @@ CMD ["java", "-jar", "app.jar"]
 # after apply docker build command 
 
 # docker build -t student-backend .
-#
+# docker run -e DB_PASSWORD=YourSecret -p 8080:8080 student-backend
