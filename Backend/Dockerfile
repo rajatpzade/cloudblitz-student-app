@@ -21,4 +21,5 @@ CMD ["java", "-jar", "app.jar"]
 
 
 
-# after apply 
+# after apply docker build command 
+
