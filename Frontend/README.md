@@ -75,11 +75,6 @@ export const deleteUser = async (id) => {
 ```
 
 
-
-
-
-
-
 - Install frontend dependencies:
 
 ```bash
