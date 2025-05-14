@@ -13,7 +13,7 @@ RUN npm install
 # Step 5: Set the environment variable for the backend API URL
 # Replace the placeholder with your actual backend server IP
 #ENV REACT_APP_BACKEND_URL=http://172.17.0.3:8080   
-# manual edit file vim src/api/userService.js and 
+# manual edit file vim src/api/userService.js and add your public backend server IP
 
 # Step 6: Build the frontend for production
 RUN npm run build
