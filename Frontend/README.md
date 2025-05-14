@@ -36,7 +36,7 @@ REACT_APP_BACKEND_URL=http://<your-backend-server-ip>:8080
 
 ## other way 
 
-### add backend IP into 
+### add backend IP into "src/api/userService.js"
 
 - Install frontend dependencies:
 
