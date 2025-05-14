@@ -10,9 +10,9 @@ COPY . /app
 # Step 4: Install the frontend dependencies
 RUN npm install
 
-# Step 5: Set the environment variable for the backend API URL
-# Replace the placeholder with your actual backend server IP
-ENV REACT_APP_BACKEND_URL=http://172.17.0.3:8080
+# # Step 5: Set the environment variable for the backend API URL
+# # Replace the placeholder with your actual backend server IP
+# ENV REACT_APP_BACKEND_URL=http://172.17.0.3:8080
 
 # Step 6: Build the frontend for production
 RUN npm run build
