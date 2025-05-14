@@ -34,6 +34,10 @@ Create or edit the `.env` file inside the `frontend/` directory and add your bac
 REACT_APP_BACKEND_URL=http://<your-backend-server-ip>:8080
 ```
 
+## other way 
+
+
+
 - Install frontend dependencies:
 
 ```bash
