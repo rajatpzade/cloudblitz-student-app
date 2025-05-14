@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = "http://54.91.185.15:8080/api";
 
 export const fetchUsers = async () => {
   try {
