@@ -1,21 +1,21 @@
-# Use an official Java runtime as a parent image
-FROM openjdk:17-jdk-slim
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
 
-# Set the working directory inside the container
 WORKDIR /app
 
-# Clone the repository and install necessary dependencies
-RUN apt-get update && \
-    apt-get install -y  maven  && \
-    mvn clean package
+COPY . .
 
-# Set the environment variables for the database connection
-ENV DB_URL=jdbc:mariadb://172.17.0.2:3306/student_db
-ENV DB_USERNAME=admin
-ENV DB_PASSWORD=adminpassword
+RUN mvn clean package -DskipTests
 
-# Expose port for the backend application
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY --from=builder /app/target/*.jar app.jar
+
 EXPOSE 8080
 
-# Run the backend application
-CMD ["java", "-jar", "/app/backend/target/student-registration-backend-0.0.1-SNAPSHOT.jar"]
+ENV DB_URL=jdbc:mariadb://localhost:3306/student_db \
+    DB_USERNAME=admin
+
+CMD ["java", "-jar", "app.jar"]
+
