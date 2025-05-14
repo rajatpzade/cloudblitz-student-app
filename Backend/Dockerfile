@@ -23,3 +23,5 @@ CMD ["java", "-jar", "app.jar"]
 
 # after apply docker build command 
 
+# docker build -t student-backend .
+#
